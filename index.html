@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>.-- Morse Code Translator .--</title>
+  </head>
+  <body>
+    <header>
+      <h1>.--Morse Code Translator.--</h1>
+    </header>
+    <main>
+      <section class="translateToggle">
+        <p>I want to translate to:</p>
+        <select name="mode" id="mode">
+          <option value="english-to-morse">Morse Code</option>
+          <option value="morse-to-english">English</option>
+        </select>
+      </section>
+      <section class="translateArea">
+        <div class="translateInput">
+          <p id="source-heading">English</p>
+          <textarea id="inputText" placeholder="Enter text here"></textarea>
+          <button class="translateButton" id="translateButton">
+            TRANSLATE
+          </button>
+        </div>
+        <div class="translateOutput">
+          <p id="output-heading">Morse Code</p>
+          <textarea id="outputText" readonly></textarea>
+        </div>
+      </section>
+      <section class="errorContainer">
+        <p class="errorStatus" id="errorStatus"></p>
+      </section>
+      <div class="clearButtonWrapper">
+        <button class="clearButton" id="clearButton">CLEAR</button>
+      </div>
+    </main>
+  </body>
+</html>
