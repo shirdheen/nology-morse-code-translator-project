@@ -12,6 +12,10 @@ export function englishtoMorse(englishText) {
   console.log("Cleaned up text: ", cleanedUpText);
   const morseArray = [];
 
+  if (cleanedUpText === "") {
+    throw new Error("Input must be a string");
+  }
+
   for (const char of cleanedUpText) {
     if (char === " ") {
       morseArray.push("/");
@@ -30,6 +34,9 @@ export function morsetoEnglish(morseText) {
     throw new Error("Input must be a string");
   }
   const cleanedUpText = morseText.trim();
+  if (cleanedUpText === "") {
+    throw new Error("Input must be a string");
+  }
   const morseWords = cleanedUpText.split("/"); // Split morse words
   console.log("Cleaned up morse code: ", morseWords);
   const englishWords = morseWords.map((word) => {
