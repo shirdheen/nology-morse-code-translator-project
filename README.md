@@ -13,4 +13,4 @@ The project also features **test driven development (TDD)**, where comprehensive
 
 ## Logic of the Translator
 
-![Logic of the translator] (./Nology - Morse Code Translator Project.png)
+![Alt text](./Nology%20-%20Morse%20Code%20Translator%20Project.png "Translator Logic")
